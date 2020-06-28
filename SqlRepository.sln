@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlRepository", "SqlRepository\SqlRepository.csproj", "{D3CC835E-6BCB-4900-AA82-4BEBA4383876}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlRepoRunner", "SqlRepoRunner\SqlRepoRunner.csproj", "{708097B8-B06F-412C-84E6-BEA4C89A5513}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{D3CC835E-6BCB-4900-AA82-4BEBA4383876}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3CC835E-6BCB-4900-AA82-4BEBA4383876}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3CC835E-6BCB-4900-AA82-4BEBA4383876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{708097B8-B06F-412C-84E6-BEA4C89A5513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{708097B8-B06F-412C-84E6-BEA4C89A5513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{708097B8-B06F-412C-84E6-BEA4C89A5513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{708097B8-B06F-412C-84E6-BEA4C89A5513}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
