@@ -62,6 +62,7 @@ namespace SqlRepository
             return _dbSet.Set<T>().AddRangeAsync(entity);
         }
 
+
         public async Task Add<T>(T entity) where T : EntityBaseModel
         {
             // there is a add async but suggested to not be used
