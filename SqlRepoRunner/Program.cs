@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using Autofac;
 using Microsoft.EntityFrameworkCore;
-using RepositoryBase;
 using Shouldly;
 using SqlRepoRunner.Model;
 using SqlRepository;
