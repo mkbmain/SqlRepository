@@ -6,8 +6,8 @@ namespace Mkb.EF.SqlRepository.Tests
 {
     public class SimpleDbContext : DbContext
     {
-        public const string DbConnectionString =
-            "Server=192.168.0.204;Database=TestDbToUse;User Id=sa;Password=12345678;";      // obviously you would not have this here but as its a test meh
+        // obviously you would not have this here but as its a test meh
+        const string DbConnectionString = "Server=192.168.0.204;Database=TestDbToUse;User Id=sa;Password=12345678;";
 
         public SimpleDbContext()
         {
