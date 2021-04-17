@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mkb.EF.Repo", "Mkb.EF.Repo\Mkb.EF.Repo.csproj", "{D3CC835E-6BCB-4900-AA82-4BEBA4383876}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mkb.EF.SqlRepository.Tests", "Mkb.EF.SqlRepository.Tests\Mkb.EF.SqlRepository.Tests.csproj", "{8EBF2F66-85B0-422B-BE06-67D6CBC58FEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mkb.EF.Repo.Tests", "Mkb.EF.Repo.Tests\Mkb.EF.Repo.Tests.csproj", "{8EBF2F66-85B0-422B-BE06-67D6CBC58FEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
