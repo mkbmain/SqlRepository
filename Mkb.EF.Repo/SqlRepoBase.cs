@@ -14,34 +14,34 @@ namespace Mkb.EF.Repo
             _dbSet = dbSet;
         }
 
-        public void Add<T>(T entity) where T : class
+        public virtual void Add<T>(T entity) where T : class
         {
             _dbSet.Set<T>().Add(entity);
         }
 
-        public void Delete<T>(T entity) where T : class
+        public virtual void Delete<T>(T entity) where T : class
         {
             _dbSet.Set<T>().Remove(entity);
         }
 
-        public IQueryable<T> GetAll<T>() where T : class
+        public virtual IQueryable<T> GetAll<T>() where T : class
         {
             return GetAll<T>(f => true);
         }
 
-        public IQueryable<T> GetAll<T>(Expression<Func<T, bool>> whereClause) where T : class
+        public virtual IQueryable<T> GetAll<T>(Expression<Func<T, bool>> whereClause) where T : class
         {
             return GetAll(whereClause, f => f);
         }
 
-        public IQueryable<Out> GetAll<T, Out>(Expression<Func<T, bool>> whereClause,
+        public virtual IQueryable<Out> GetAll<T, Out>(Expression<Func<T, bool>> whereClause,
             Expression<Func<T, Out>> projection)
             where T : class
         {
             return GetAll(whereClause, projection, true);
         }
 
-        public IQueryable<Out> GetAll<T, Out>(Expression<Func<T, bool>> whereClause,
+        public virtual IQueryable<Out> GetAll<T, Out>(Expression<Func<T, bool>> whereClause,
             Expression<Func<T, Out>> projection,
             bool tracking, params Expression<Func<T, object>>[] includes) where T : class
         {

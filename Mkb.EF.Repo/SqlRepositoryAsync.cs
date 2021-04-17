@@ -12,31 +12,31 @@ namespace Mkb.EF.Repo
         {
         }
 
-        public Task<T> GetFirst<T>(Expression<Func<T, bool>> whereClause) where T : class
+        public virtual Task<T> GetFirst<T>(Expression<Func<T, bool>> whereClause) where T : class
         {
             return GetAll(whereClause).FirstOrDefaultAsync();
         }
 
-        public Task AddMany<T>(IEnumerable<T> entity) where T : class
+        public virtual Task AddMany<T>(IEnumerable<T> entity) where T : class
         {
             return _dbSet.Set<T>().AddRangeAsync(entity);
         }
 
 
-        public async Task AddAndSave<T>(T entity) where T : class
+        public virtual async Task AddAndSave<T>(T entity) where T : class
         {
             Add(entity);
             await Save();
         }
 
 
-        public async Task DeleteAndSave<T>(T entity) where T : class
+        public virtual async Task DeleteAndSave<T>(T entity) where T : class
         {
             Delete(entity);
             await Save();
         }
 
-        public async Task Save()
+        public virtual async Task Save()
         {
             await _dbSet.SaveChangesAsync();
         }
