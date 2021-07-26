@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Mkb.EF.Repo
 {
-    public class SqlRepository : SqlRepoBase
+    public class SqlRepository<TContext> : SqlRepoBase where TContext : DbContext
     {
-        public SqlRepository(DbContext dbSet) : base(dbSet)
+        public SqlRepository(TContext dbSet) : base(dbSet)
         {
         }
 

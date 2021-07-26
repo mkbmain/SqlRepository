@@ -9,6 +9,7 @@
         <Description>Simple sql repo requires db context to be parsed in details at https://github.com/mkbmain/SqlRepository</Description>
         <PackageProjectUrl>https://github.com/mkbmain/SqlRepository</PackageProjectUrl>
         <RepositoryUrl>https://github.com/mkbmain/SqlRepository</RepositoryUrl>
+        <PackageVersion>2.0.0</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>

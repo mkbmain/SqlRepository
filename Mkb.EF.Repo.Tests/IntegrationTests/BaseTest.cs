@@ -15,11 +15,11 @@ namespace Mkb.EF.SqlRepository.Tests.IntegrationTests
 
     }
     
-    public abstract class BaseIntegrationAsyncTests : BaseIntegrationTests<SqlRepositoryAsync>
+    public abstract class BaseIntegrationAsyncTests : BaseIntegrationTests<SqlRepositoryAsync<SimpleDbContext>>
     {
     }
     
-    public abstract class BaseIntegrationSyncTests : BaseIntegrationTests<Repo.SqlRepository>
+    public abstract class BaseIntegrationSyncTests : BaseIntegrationTests<Repo.SqlRepository<SimpleDbContext>>
     {
     }
 }
