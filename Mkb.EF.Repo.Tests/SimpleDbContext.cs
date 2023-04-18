@@ -7,7 +7,9 @@ namespace Mkb.EF.SqlRepository.Tests
     public class SimpleDbContext : DbContext
     {
         // obviously you would not have this here but as its a test meh
-        private const string DbConnectionString = "Server=192.168.0.204;Database=TestDbToUse;User Id=sa;Password=12345678;";
+        public const string DbName = "TestDbToUse";
+        private const string DbConnectionString = "Server=localhost;Database=" + DbName + ";User Id=sa;Password=A1234567a;";
+        public static string MasterString = DbConnectionString.Replace(DbName, "master");
 
         public SimpleDbContext()
         {
